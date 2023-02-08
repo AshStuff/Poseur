@@ -215,9 +215,9 @@ test_pipeline = val_pipeline
 
 data_root = 'data/coco'
 data = dict(
-    samples_per_gpu=32,
+    samples_per_gpu=12,
     # samples_per_gpu=64,
-    workers_per_gpu=8,
+    workers_per_gpu=0,
     val_dataloader=dict(samples_per_gpu=32),
     test_dataloader=dict(samples_per_gpu=32),
     train=dict(

@@ -333,7 +333,7 @@ class PoseurHead(nn.Module):
         for img_id in range(batch_size):
             # img_h, img_w, _ = img_metas[img_id]['img_shape']
             img_masks[img_id, :img_h, :img_w] = 0
-
+        import pdb;pdb.set_trace()
         mlvl_masks = []
         mlvl_positional_encodings = []
         for feat in mlvl_feats:

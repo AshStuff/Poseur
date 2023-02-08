@@ -108,7 +108,7 @@ class Poseur(TopDown):
         """
         """Defines the computation performed at every call when training."""
         output = self.backbone(img)
-
+        import pdb;pdb.set_trace()
         if self.with_neck:
             output = self.neck(output)
         if self.with_keypoint:

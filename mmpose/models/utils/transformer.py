@@ -995,7 +995,7 @@ class PoseurTransformer(Transformer):
                 cls_branches=None,
                 **kwargs):
         assert self.as_two_stage or query_embed is not None
-
+        import pdb;pdb.set_trace()
         feat_flatten = []
         mask_flatten = []
         lvl_pos_embed_flatten = []

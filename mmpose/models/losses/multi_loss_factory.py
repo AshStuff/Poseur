@@ -1,6 +1,3 @@
-cd/csdcdcs;'svvvvv'v'
-
-'
 # ------------------------------------------------------------------------------
 # Adapted from https://github.com/HRNet/HigherHRNet-Human-Pose-Estimation
 # Original licence: Copyright (c) Microsoft, under the MIT License.

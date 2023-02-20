@@ -277,7 +277,6 @@ class Kpt2dSviewRgbImgTopDownDataset(Dataset, metaclass=ABCMeta):
         return len(self.db)
 
     def __getitem__(self, idx):
-        import pdb;pdb.set_trace()
 
         """Get the sample given index."""
         results = copy.deepcopy(self.db[idx])

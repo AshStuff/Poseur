@@ -792,6 +792,7 @@ class TopDownGenerateCoordAndHeatMapTarget(TopDownGenerateTarget, TopDownGenerat
         self.encoding = encoding
 
     def __call__(self, results):
+        import pdb;pdb.set_trace()
         """Generate the coord target."""
         joints_3d = results['joints_3d']
         joints_3d_visible = results['joints_3d_visible']

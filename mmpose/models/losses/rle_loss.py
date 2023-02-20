@@ -21,7 +21,7 @@ class RLELoss_poseur(nn.Module):
         return torch.log(sigma / self.amp) + torch.abs(gt_uv - pred_jts) / (math.sqrt(2) * sigma + 1e-9)
 
     def forward(self, output, target_uv, target_uv_weight):
-
+        import pdb;pdb.set_trace()
         pred_jts = output.pred_jts
         sigma = output.sigma
         gt_uv = target_uv.reshape(pred_jts.shape)

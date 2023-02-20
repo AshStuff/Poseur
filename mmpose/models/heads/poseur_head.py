@@ -439,7 +439,7 @@ class PoseurHead(nn.Module):
         losses = dict()
         assert not isinstance(self.loss_coord_enc, nn.Sequential)
         assert target.dim() == 3 and target_weight.dim() == 3
-
+        import pdb;pdb.set_trace()
         BATCH_SIZE = output.sigma.size(0)
         gt_uv = target.reshape(output.pred_jts.shape)
         bar_mu = (output.pred_jts - gt_uv) / output.sigma

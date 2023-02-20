@@ -96,6 +96,7 @@ class TopDownCocoDataset(Kpt2dSviewRgbImgTopDownDataset):
 
     def _get_db(self):
         """Load dataset."""
+        import pdb;pdb.set_trace()
         if (not self.test_mode) or self.use_gt_bbox:
             # use ground truth bbox
             gt_db = self._load_coco_keypoint_annotations()

@@ -29,7 +29,7 @@ class RLELoss_poseur(nn.Module):
 
         
         
-        nf_loss = output.nf_loss * gt_uv_weight[:, :, :1] 
+        nf_loss = output.nf_loss * gt_uv_weight[:, :, :1]  
         # print(gt_uv.min(), gt_uv.max())
 
         residual = True

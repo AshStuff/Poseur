@@ -593,7 +593,7 @@ class DeformableDetrTransformerDecoder(TransformerLayerSequence):
                 reference_points=reference_points_input,
                 **kwargs)
             output = output.permute(1, 0, 2)
-
+            import pdb;pdb.set_trace()
             if reg_branches is not None:
                 tmp = reg_branches[lid](output)
                 if fc_coord is not None:

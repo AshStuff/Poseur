@@ -751,8 +751,7 @@ class TopDownGenerateTargetRegression:
                 joints_3d[:, 1] <= image_size[1] - 1)
 
         target = joints_3d[:, :2] / image_size
-        if np.any(target < 0):
-            import pdb;pdb.set_trace()
+        
         target = target.astype(np.float32)
         target_weight = joints_3d_visible[:, :2] * mask[:, None]
 

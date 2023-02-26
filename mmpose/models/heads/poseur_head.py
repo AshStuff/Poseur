@@ -202,11 +202,13 @@ class PoseurHead(nn.Module):
 
         num_pred = self.transformer.decoder.num_layers
 
+        import pdb;pdb.set_trace()
         if self.with_box_refine:
             self.fc_coord_branches = _get_clones(fc_coord_branch, num_pred)
             self.fc_coord_output_branches = _get_clones(fc_coord_branch, num_pred)
             if self.use_dec_rle_loss:
                 self.fc_sigma_branches = _get_clones(fc_sigma_branch, num_pred)
+            
             # if self.as_two_stage:
             #     self.cls_out_channels = 2
             #     fc_cls = Linear(self.embed_dims, self.cls_out_channels)
